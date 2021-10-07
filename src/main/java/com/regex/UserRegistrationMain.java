@@ -21,6 +21,7 @@ public class UserRegistrationMain {
 			System.out.println("Enter 5 : to validate Password Rule 1 ");
 			System.out.println("Enter 6 : to validate Password Rule 2 (Upper Case)");
 			System.out.println("Enter 7 : to validate Password Rule 3 (Upper Case & one numeric number)");
+			System.out.println("Enter 8 : to validate Password Rule 3 (Upper Case , one numeric number & one special character)");
 			switch (scanner.nextInt()){
 			case 0:			
 				System.exit(0);
@@ -51,6 +52,10 @@ public class UserRegistrationMain {
 				UserRegistration.validPassRule3();
 				break;
 
+			case 8:
+				UserRegistration.validPassRule4();
+				break;
+				
 
 			default:
 				System.out.println("Select a valid number");
