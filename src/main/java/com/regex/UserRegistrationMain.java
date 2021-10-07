@@ -20,6 +20,7 @@ public class UserRegistrationMain {
 			System.out.println("Enter 4 : to validate Moblie Number ");
 			System.out.println("Enter 5 : to validate Password Rule 1 ");
 			System.out.println("Enter 6 : to validate Password Rule 2 (Upper Case)");
+			System.out.println("Enter 7 : to validate Password Rule 3 (Upper Case & one numeric number)");
 			switch (scanner.nextInt()){
 			case 0:			
 				System.exit(0);
@@ -38,18 +39,21 @@ public class UserRegistrationMain {
 
 			case 4:
 				UserRegistration.validMobileNumber();
-			break;
-			
+				break;
+
 			case 5:
 				UserRegistration.validPassRule1();
-			break;
+				break;
 			case 6:
 				UserRegistration.validPassRule2();
-			break;
-			
-			
-			  default:
-	                System.out.println("Select a valid number");
+				break;
+			case 7:
+				UserRegistration.validPassRule3();
+				break;
+
+
+			default:
+				System.out.println("Select a valid number");
 
 			}
 
