@@ -135,10 +135,11 @@ public class UserRegistration {
 	        Scanner scanner = new Scanner(System.in);
 	        System.out.print("Enter the email : @gmail.com ");
 	        String emailSample = scanner.next();
-	        String regex6 = "[a-zA-Z0-9][a-zA-Z0-9_.]*@gmail[.]com";
+	        String regex6 = "[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+";
 	        Pattern p6 = Pattern.compile(regex6);
 	        Matcher m6 = p6.matcher(emailSample);
 	        boolean r6 = m6.matches();
+	       // Boolean answer = Pattern.matches("[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+",emailSample);
 	        if (r6)
 	            System.out.println("Valid G-mail address");
 	        else
