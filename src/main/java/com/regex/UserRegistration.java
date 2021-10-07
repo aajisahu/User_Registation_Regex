@@ -62,7 +62,19 @@ public class UserRegistration {
 
 	}
 
-
+	public static void validMobileNumber(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your mobile number : ");
+        String phoneNo = scanner.nextLine();
+        String regex3 = "(91|0)?\\s?[6-9][0-9]{9}$";
+        Pattern p3 = Pattern.compile(regex3);
+        Matcher m3 = p3.matcher(phoneNo);
+        boolean r3 = m3.matches();
+        if (r3)
+            System.out.println("Phone number is Valid");
+        else
+            System.out.println("Phone number is !Invalid");
+    }
 
 
 

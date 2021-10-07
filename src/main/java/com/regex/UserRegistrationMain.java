@@ -17,6 +17,7 @@ public class UserRegistrationMain {
 			System.out.println("Enter 1 : to validate First Name ");
 			System.out.println("Enter 2 : to validate Last Name ");
 			System.out.println("Enter 3 : to validate E-mail ");
+			System.out.println("Enter 4 : to validate Moblie Number ");
 			switch (scanner.nextInt()){
 			case 0:			
 				System.exit(0);
@@ -33,8 +34,9 @@ public class UserRegistrationMain {
 				UserRegistration.valideMail();
 				break;
 
-
-
+			case 4:
+				UserRegistration.validMobileNumber();
+			break;
 
 
 
