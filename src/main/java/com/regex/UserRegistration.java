@@ -90,6 +90,18 @@ public class UserRegistration {
             System.out.println("Password is !Invalid");
     }
 
-
+	 public static void validPassRule2(){
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter the Password at least one Upper Case & eight charecter :");
+	        String passWord1 = scanner.nextLine();
+	        String regex5 = "^[A-Z]{1}+[a-zA-z0-9]{7,}$";
+	        Pattern p5 = Pattern.compile(regex5);
+	        Matcher m5 = p5.matcher(passWord1);
+	        boolean r5 = m5.matches();
+	        if (r5)
+	            System.out.println("Password is Valid");
+	        else
+	            System.out.println("Password is !Invalid");
+	    }
 
 }
