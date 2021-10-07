@@ -22,6 +22,7 @@ public class UserRegistrationMain {
 			System.out.println("Enter 6 : to validate Password Rule 2 (Upper Case)");
 			System.out.println("Enter 7 : to validate Password Rule 3 (Upper Case & one numeric number)");
 			System.out.println("Enter 8 : to validate Password Rule 3 (Upper Case , one numeric number & one special character)");
+			System.out.println("Enter 9 : to validate a Simple Gmail Address");
 			switch (scanner.nextInt()){
 			case 0:			
 				System.exit(0);
@@ -55,6 +56,10 @@ public class UserRegistrationMain {
 			case 8:
 				UserRegistration.validPassRule4();
 				break;
+			case 9:
+				UserRegistration.emailSamples();
+				break;
+				
 				
 
 			default:
